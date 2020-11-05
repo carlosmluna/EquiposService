@@ -7,15 +7,15 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 
 
 @SpringBootApplication
-// public class EquiposServiceApplication {
-public class EquiposServiceApplication extends SpringBootServletInitializer {
+public class EquiposServiceApplication {
+// public class EquiposServiceApplication extends SpringBootServletInitializer {
 	
 	public static void main(String[] args) {
 		SpringApplication.run(EquiposServiceApplication.class, args);
 	}
 
-	@Override
+	/* @Override
 	protected SpringApplicationBuilder configure (SpringApplicationBuilder application) {
 		return application.sources(EquiposServiceApplication.class);
-	}
+	} */
 }

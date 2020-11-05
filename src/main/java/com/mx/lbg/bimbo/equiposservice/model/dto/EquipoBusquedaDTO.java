@@ -12,12 +12,13 @@ public class EquipoBusquedaDTO {
 	private String accion;
 	private String programacion;
 	private String proveedor;
+	private String serie_cambio;
 	
 	
 	public EquipoBusquedaDTO() { }
 	
 	public EquipoBusquedaDTO(String id, String estatus, String region, String localidad, String bodega, String razon_social,
-			String modelo_uevo, String accion, String programacion, String proveedor) {
+			String modelo_uevo, String accion, String programacion, String proveedor, String serie_cambio) {
 		this.id 			= id;
 		this.estatus 		= estatus;
 		this.region 		= region;
@@ -28,6 +29,7 @@ public class EquipoBusquedaDTO {
 		this.accion 		= accion;
 		this.programacion 	= programacion;
 		this.proveedor 		= proveedor;
+		this.serie_cambio   = serie_cambio;
 	}
 
 	
@@ -91,12 +93,19 @@ public class EquipoBusquedaDTO {
 	public void setProveedor(String proveedor) {
 		this.proveedor = proveedor;
 	}
+	public String getSerie_cambio() {
+		return serie_cambio;
+	}
+	public void setSerie_cambio(String serie_cambio) {
+		this.serie_cambio = serie_cambio;
+	}
 	
 
 	@Override
 	public String toString() {
-		return "PersonaBusquedaDTO [estatus=" + estatus + ", region=" + region + ", localidad=" + localidad
-				+ ", bodega=" + bodega + ", razon_social=" + razon_social + ", modelo_uevo=" + modelo_uevo + ", accion="
-				+ accion + ", programacion=" + programacion + ", proveedor=" + proveedor + "]";
+		return "EquipoBusquedaDTO [id=" + id + ", estatus=" + estatus + ", region=" + region + ", localidad="
+				+ localidad + ", bodega=" + bodega + ", razon_social=" + razon_social + ", modelo_uevo=" + modelo_uevo
+				+ ", accion=" + accion + ", programacion=" + programacion + ", proveedor=" + proveedor
+				+ ", serie_cambio=" + serie_cambio + "]";
 	}
 }

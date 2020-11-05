@@ -8,5 +8,5 @@ import com.mx.lbg.bimbo.equiposservice.model.LocalidadEntity;
 
 @Repository
 public interface ILocalidadRepository extends JpaRepository<LocalidadEntity, Integer> {
-	
+	LocalidadEntity findByLocalidad(String localidad);
 }
